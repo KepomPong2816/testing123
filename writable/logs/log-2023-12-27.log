@@ -1,0 +1,261 @@
+INFO - 2023-12-27 04:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-27 04:42:48 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\alt\gohit\GohitMVP\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 D:\alt\gohit\GohitMVP\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'gohit', 3306, '', 0)
+#1 D:\alt\gohit\GohitMVP\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\alt\gohit\GohitMVP\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\alt\gohit\GohitMVP\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\alt\gohit\GohitMVP\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\alt\gohit\GohitMVP\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(3, 0)
+#6 D:\alt\gohit\GohitMVP\app\Controllers\Home.php(64): CodeIgniter\BaseModel->findAll(3)
+#7 D:\alt\gohit\GohitMVP\system\CodeIgniter.php(934): App\Controllers\Home->home()
+#8 D:\alt\gohit\GohitMVP\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\alt\gohit\GohitMVP\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\alt\gohit\GohitMVP\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\alt\gohit\GohitMVP\system\Commands\Server\rewrite.php(47): require_once('D:\\alt\\gohit\\Go...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\alt\gohit\GohitMVP\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\alt\gohit\GohitMVP\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\alt\gohit\GohitMVP\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\alt\gohit\GohitMVP\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\alt\gohit\GohitMVP\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\alt\gohit\GohitMVP\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(3, 0)
+#5 D:\alt\gohit\GohitMVP\app\Controllers\Home.php(64): CodeIgniter\BaseModel->findAll(3)
+#6 D:\alt\gohit\GohitMVP\system\CodeIgniter.php(934): App\Controllers\Home->home()
+#7 D:\alt\gohit\GohitMVP\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\alt\gohit\GohitMVP\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\alt\gohit\GohitMVP\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\alt\gohit\GohitMVP\system\Commands\Server\rewrite.php(47): require_once('D:\\alt\\gohit\\Go...')
+#11 {main}
+CRITICAL - 2023-12-27 04:42:48 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `event`
+ LIMIT 3', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(3, 0)
+ 5 APPPATH\Controllers\Home.php(64): CodeIgniter\BaseModel->findAll(3)
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->home()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\alt\\gohit\\GohitMVP\\public\\index.php')
+INFO - 2023-12-27 04:43:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-27 04:43:04 --> CURL Error: Could not resolve host: app.midtrans.com
+in VENDORPATH\midtrans\midtrans-php\Midtrans\ApiRequestor.php on line 156.
+ 1 VENDORPATH\midtrans\midtrans-php\Midtrans\ApiRequestor.php(39): Midtrans\ApiRequestor::remoteCall('https://app.midtrans.com/snap/v1/transactions', 'Mid-server-7YQmR2bUiU8d6iZdI9RqlRvu', [...], 'POST')
+ 2 VENDORPATH\midtrans\midtrans-php\Midtrans\Snap.php(109): Midtrans\ApiRequestor::post('https://app.midtrans.com/snap/v1/transactions', 'Mid-server-7YQmR2bUiU8d6iZdI9RqlRvu', [...])
+ 3 VENDORPATH\midtrans\midtrans-php\Midtrans\Snap.php(36): Midtrans\Snap::createTransaction([...])
+ 4 APPPATH\Controllers\Home.php(68): Midtrans\Snap::getSnapToken([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->home()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\alt\\gohit\\GohitMVP\\public\\index.php')
+INFO - 2023-12-27 04:43:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-27 04:43:05 --> CURL Error: Could not resolve host: app.midtrans.com
+in VENDORPATH\midtrans\midtrans-php\Midtrans\ApiRequestor.php on line 156.
+ 1 VENDORPATH\midtrans\midtrans-php\Midtrans\ApiRequestor.php(39): Midtrans\ApiRequestor::remoteCall('https://app.midtrans.com/snap/v1/transactions', 'Mid-server-7YQmR2bUiU8d6iZdI9RqlRvu', [...], 'POST')
+ 2 VENDORPATH\midtrans\midtrans-php\Midtrans\Snap.php(109): Midtrans\ApiRequestor::post('https://app.midtrans.com/snap/v1/transactions', 'Mid-server-7YQmR2bUiU8d6iZdI9RqlRvu', [...])
+ 3 VENDORPATH\midtrans\midtrans-php\Midtrans\Snap.php(36): Midtrans\Snap::createTransaction([...])
+ 4 APPPATH\Controllers\Home.php(68): Midtrans\Snap::getSnapToken([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->home()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\alt\\gohit\\GohitMVP\\public\\index.php')
+INFO - 2023-12-27 04:43:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-27 04:43:07 --> CURL Error: Could not resolve host: app.midtrans.com
+in VENDORPATH\midtrans\midtrans-php\Midtrans\ApiRequestor.php on line 156.
+ 1 VENDORPATH\midtrans\midtrans-php\Midtrans\ApiRequestor.php(39): Midtrans\ApiRequestor::remoteCall('https://app.midtrans.com/snap/v1/transactions', 'Mid-server-7YQmR2bUiU8d6iZdI9RqlRvu', [...], 'POST')
+ 2 VENDORPATH\midtrans\midtrans-php\Midtrans\Snap.php(109): Midtrans\ApiRequestor::post('https://app.midtrans.com/snap/v1/transactions', 'Mid-server-7YQmR2bUiU8d6iZdI9RqlRvu', [...])
+ 3 VENDORPATH\midtrans\midtrans-php\Midtrans\Snap.php(36): Midtrans\Snap::createTransaction([...])
+ 4 APPPATH\Controllers\Home.php(68): Midtrans\Snap::getSnapToken([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->home()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\alt\\gohit\\GohitMVP\\public\\index.php')
+INFO - 2023-12-27 04:57:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-27 04:57:16 --> CURL Error: Could not resolve host: app.midtrans.com
+in VENDORPATH\midtrans\midtrans-php\Midtrans\ApiRequestor.php on line 156.
+ 1 VENDORPATH\midtrans\midtrans-php\Midtrans\ApiRequestor.php(39): Midtrans\ApiRequestor::remoteCall('https://app.midtrans.com/snap/v1/transactions', 'Mid-server-7YQmR2bUiU8d6iZdI9RqlRvu', [...], 'POST')
+ 2 VENDORPATH\midtrans\midtrans-php\Midtrans\Snap.php(109): Midtrans\ApiRequestor::post('https://app.midtrans.com/snap/v1/transactions', 'Mid-server-7YQmR2bUiU8d6iZdI9RqlRvu', [...])
+ 3 VENDORPATH\midtrans\midtrans-php\Midtrans\Snap.php(36): Midtrans\Snap::createTransaction([...])
+ 4 APPPATH\Controllers\Home.php(68): Midtrans\Snap::getSnapToken([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->home()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\alt\\gohit\\GohitMVP\\public\\index.php')
+INFO - 2023-12-27 04:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 04:59:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 04:59:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 04:59:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-27 04:59:35 --> Undefined variable $title
+in APPPATH\Views\partial\header2.php on line 12.
+ 1 APPPATH\Views\partial\header2.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\alt\\gohit\\GohitMVP\\app\\Views\\partial\\header2.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\alt\\gohit\\GohitMVP\\app\\Views\\partial\\header2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/header2', null, true)
+ 5 APPPATH\Views\event.php(1): CodeIgniter\View\View->include('partial/header2')
+ 6 SYSTEMPATH\View\View.php(213): include('D:\\alt\\gohit\\GohitMVP\\app\\Views\\event.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('event', [], true)
+ 9 APPPATH\Controllers\MyEvent.php(41): view('event', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MyEvent->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyEvent))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\alt\\gohit\\GohitMVP\\public\\index.php')
+INFO - 2023-12-27 04:59:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 04:59:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 04:59:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 04:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:00:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:00:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:00:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:00:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:00:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:00:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:00:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:00:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:01:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:02:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:07:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:07:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:07:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:07:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:15:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:21:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:21:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:25:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:25:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:25:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:25:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:25:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:25:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-27 05:25:33 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 23.
+ 1 APPPATH\Views\detaileventp.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\alt\\gohit\\GohitMVP\\app\\Views\\detaileventp.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\alt\\gohit\\GohitMVP\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(159): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'main.css')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\alt\\gohit\\GohitMVP\\public\\index.php')
+INFO - 2023-12-27 05:25:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-27 05:25:33 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 23.
+ 1 APPPATH\Views\detaileventp.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\alt\\gohit\\GohitMVP\\app\\Views\\detaileventp.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\alt\\gohit\\GohitMVP\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(159): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'style.css')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\alt\\gohit\\GohitMVP\\public\\index.php')
+INFO - 2023-12-27 05:25:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-27 05:25:33 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 23.
+ 1 APPPATH\Views\detaileventp.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\alt\\gohit\\GohitMVP\\app\\Views\\detaileventp.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\alt\\gohit\\GohitMVP\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(159): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('images', 'bg-01.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\alt\\gohit\\GohitMVP\\public\\index.php')
+INFO - 2023-12-27 05:25:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:27:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:27:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:27:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:28:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:42:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-27 05:43:50 --> Midtrans API is returning API error. HTTP status code: 400 API response: {"error_messages":["customer_details.email format is invalid"]}
+in VENDORPATH\midtrans\midtrans-php\Midtrans\ApiRequestor.php on line 167.
+ 1 VENDORPATH\midtrans\midtrans-php\Midtrans\ApiRequestor.php(39): Midtrans\ApiRequestor::remoteCall('https://app.midtrans.com/snap/v1/transactions', 'Mid-server-7YQmR2bUiU8d6iZdI9RqlRvu', [...], 'POST')
+ 2 VENDORPATH\midtrans\midtrans-php\Midtrans\Snap.php(109): Midtrans\ApiRequestor::post('https://app.midtrans.com/snap/v1/transactions', 'Mid-server-7YQmR2bUiU8d6iZdI9RqlRvu', [...])
+ 3 VENDORPATH\midtrans\midtrans-php\Midtrans\Snap.php(36): Midtrans\Snap::createTransaction([...])
+ 4 APPPATH\Controllers\Home.php(82): Midtrans\Snap::getSnapToken([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->home()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\alt\\gohit\\GohitMVP\\public\\index.php')
+INFO - 2023-12-27 05:44:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:44:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-27 05:44:12 --> Midtrans API is returning API error. HTTP status code: 400 API response: {"error_messages":["customer_details.email format is invalid"]}
+in VENDORPATH\midtrans\midtrans-php\Midtrans\ApiRequestor.php on line 167.
+ 1 VENDORPATH\midtrans\midtrans-php\Midtrans\ApiRequestor.php(39): Midtrans\ApiRequestor::remoteCall('https://app.midtrans.com/snap/v1/transactions', 'Mid-server-7YQmR2bUiU8d6iZdI9RqlRvu', [...], 'POST')
+ 2 VENDORPATH\midtrans\midtrans-php\Midtrans\Snap.php(109): Midtrans\ApiRequestor::post('https://app.midtrans.com/snap/v1/transactions', 'Mid-server-7YQmR2bUiU8d6iZdI9RqlRvu', [...])
+ 3 VENDORPATH\midtrans\midtrans-php\Midtrans\Snap.php(36): Midtrans\Snap::createTransaction([...])
+ 4 APPPATH\Controllers\Home.php(82): Midtrans\Snap::getSnapToken([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->home()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\alt\\gohit\\GohitMVP\\public\\index.php')
+CRITICAL - 2023-12-27 05:44:34 --> syntax error, unexpected single-quoted string "@gmail.com", expecting ")"
+in APPPATH\Controllers\Home.php on line 35.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\alt\\gohit\\GohitMVP\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\alt\\gohit\\GohitMVP\\public\\index.php')
+INFO - 2023-12-27 05:44:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:45:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:49:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-27 05:49:09 --> CURL Error: Could not resolve host: app.midtrans.com
+in VENDORPATH\midtrans\midtrans-php\Midtrans\ApiRequestor.php on line 156.
+ 1 VENDORPATH\midtrans\midtrans-php\Midtrans\ApiRequestor.php(39): Midtrans\ApiRequestor::remoteCall('https://app.midtrans.com/snap/v1/transactions', 'Mid-server-7YQmR2bUiU8d6iZdI9RqlRvu', [...], 'POST')
+ 2 VENDORPATH\midtrans\midtrans-php\Midtrans\Snap.php(109): Midtrans\ApiRequestor::post('https://app.midtrans.com/snap/v1/transactions', 'Mid-server-7YQmR2bUiU8d6iZdI9RqlRvu', [...])
+ 3 VENDORPATH\midtrans\midtrans-php\Midtrans\Snap.php(36): Midtrans\Snap::createTransaction([...])
+ 4 APPPATH\Controllers\Home.php(82): Midtrans\Snap::getSnapToken([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->home()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\alt\\gohit\\GohitMVP\\public\\index.php')
+INFO - 2023-12-27 05:50:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:50:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:50:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-27 05:50:28 --> Midtrans API is returning API error. HTTP status code: 400 API response: {"error_messages":["customer_details.email format is invalid"]}
+in VENDORPATH\midtrans\midtrans-php\Midtrans\ApiRequestor.php on line 167.
+ 1 VENDORPATH\midtrans\midtrans-php\Midtrans\ApiRequestor.php(39): Midtrans\ApiRequestor::remoteCall('https://app.midtrans.com/snap/v1/transactions', 'Mid-server-7YQmR2bUiU8d6iZdI9RqlRvu', [...], 'POST')
+ 2 VENDORPATH\midtrans\midtrans-php\Midtrans\Snap.php(109): Midtrans\ApiRequestor::post('https://app.midtrans.com/snap/v1/transactions', 'Mid-server-7YQmR2bUiU8d6iZdI9RqlRvu', [...])
+ 3 VENDORPATH\midtrans\midtrans-php\Midtrans\Snap.php(36): Midtrans\Snap::createTransaction([...])
+ 4 APPPATH\Controllers\Home.php(68): Midtrans\Snap::getSnapToken([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->home()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\alt\\gohit\\GohitMVP\\public\\index.php')
+INFO - 2023-12-27 05:58:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:58:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:58:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 06:51:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 06:52:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 06:52:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 07:01:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 07:05:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 07:06:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 07:07:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 07:07:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 07:08:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,961 @@
+INFO - 2023-06-08 02:27:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 02:28:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 02:28:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 02:28:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 02:28:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 02:30:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 02:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 02:31:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 02:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 06:17:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 06:18:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 06:18:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 06:18:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 06:18:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 06:18:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 06:48:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 06:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-08 06:48:55 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\Login.php on line 80.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->form()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-06-08 06:50:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 06:52:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 06:53:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 06:56:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 06:56:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 06:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-08 06:57:16 --> mysqli_sql_exception: Column 'upload' cannot be null in D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Controllers\Login.php(109): App\Models\Eventm->saveuser(Array)
+#6 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(934): App\Controllers\Login->form()
+#7 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH...')
+#11 {main}
+CRITICAL - 2023-06-08 06:57:16 --> Column 'upload' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-09\', \'13:00\', \'lol\', \'Esport\', \'8\', \'asasd\', NULL, \'500000000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-09\', \'13:00\', \'lol\', \'Esport\', \'8\', \'asasd\', NULL, \'500000000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-09\', \'13:00\', \'lol\', \'Esport\', \'8\', \'asasd\', NULL, \'500000000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (:id_user:, :title:, :date_column:, :time:, :organizer:, :type_sport:, :participant:, :location:, :upload:, :price:)', [...], false)
+ 5 APPPATH\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Login.php(109): App\Models\Eventm->saveuser([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->form()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+ERROR - 2023-06-08 06:57:48 --> mysqli_sql_exception: Column 'upload' cannot be null in D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Controllers\Login.php(109): App\Models\Eventm->saveuser(Array)
+#6 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(934): App\Controllers\Login->form()
+#7 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH...')
+#11 {main}
+CRITICAL - 2023-06-08 06:57:48 --> Column 'upload' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-09\', \'13:00\', \'lol\', \'Esport\', \'8\', \'asasd\', NULL, \'500000000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-09\', \'13:00\', \'lol\', \'Esport\', \'8\', \'asasd\', NULL, \'500000000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-09\', \'13:00\', \'lol\', \'Esport\', \'8\', \'asasd\', NULL, \'500000000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (:id_user:, :title:, :date_column:, :time:, :organizer:, :type_sport:, :participant:, :location:, :upload:, :price:)', [...], false)
+ 5 APPPATH\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Login.php(109): App\Models\Eventm->saveuser([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->form()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-06-08 06:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-08 06:58:16 --> mysqli_sql_exception: Column 'upload' cannot be null in D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Controllers\Login.php(109): App\Models\Eventm->saveuser(Array)
+#6 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(934): App\Controllers\Login->form()
+#7 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH...')
+#11 {main}
+CRITICAL - 2023-06-08 06:58:16 --> Column 'upload' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-09\', \'13:00\', \'lol\', \'Esport\', \'8\', \'asasd\', NULL, \'500000000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-09\', \'13:00\', \'lol\', \'Esport\', \'8\', \'asasd\', NULL, \'500000000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-09\', \'13:00\', \'lol\', \'Esport\', \'8\', \'asasd\', NULL, \'500000000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (:id_user:, :title:, :date_column:, :time:, :organizer:, :type_sport:, :participant:, :location:, :upload:, :price:)', [...], false)
+ 5 APPPATH\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Login.php(109): App\Models\Eventm->saveuser([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->form()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+ERROR - 2023-06-08 07:00:18 --> mysqli_sql_exception: Column 'upload' cannot be null in D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Controllers\Login.php(109): App\Models\Eventm->saveuser(Array)
+#6 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(934): App\Controllers\Login->form()
+#7 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH...')
+#11 {main}
+CRITICAL - 2023-06-08 07:00:18 --> Column 'upload' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-09\', \'13:00\', \'lol\', \'Esport\', \'8\', \'asasd\', NULL, \'500000000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-09\', \'13:00\', \'lol\', \'Esport\', \'8\', \'asasd\', NULL, \'500000000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-09\', \'13:00\', \'lol\', \'Esport\', \'8\', \'asasd\', NULL, \'500000000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (:id_user:, :title:, :date_column:, :time:, :organizer:, :type_sport:, :participant:, :location:, :upload:, :price:)', [...], false)
+ 5 APPPATH\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Login.php(109): App\Models\Eventm->saveuser([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->form()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+ERROR - 2023-06-08 07:00:59 --> mysqli_sql_exception: Column 'upload' cannot be null in D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Controllers\Login.php(109): App\Models\Eventm->saveuser(Array)
+#6 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(934): App\Controllers\Login->form()
+#7 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH...')
+#11 {main}
+CRITICAL - 2023-06-08 07:00:59 --> Column 'upload' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-09\', \'13:00\', \'lol\', \'Esport\', \'8\', \'asasd\', NULL, \'500000000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-09\', \'13:00\', \'lol\', \'Esport\', \'8\', \'asasd\', NULL, \'500000000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-09\', \'13:00\', \'lol\', \'Esport\', \'8\', \'asasd\', NULL, \'500000000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (:id_user:, :title:, :date_column:, :time:, :organizer:, :type_sport:, :participant:, :location:, :upload:, :price:)', [...], false)
+ 5 APPPATH\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Login.php(109): App\Models\Eventm->saveuser([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->form()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+ERROR - 2023-06-08 07:01:17 --> mysqli_sql_exception: Column 'upload' cannot be null in D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Controllers\Login.php(109): App\Models\Eventm->saveuser(Array)
+#6 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(934): App\Controllers\Login->form()
+#7 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH...')
+#11 {main}
+CRITICAL - 2023-06-08 07:01:17 --> Column 'upload' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-09\', \'13:00\', \'lol\', \'Esport\', \'8\', \'asasd\', NULL, \'500000000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-09\', \'13:00\', \'lol\', \'Esport\', \'8\', \'asasd\', NULL, \'500000000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-09\', \'13:00\', \'lol\', \'Esport\', \'8\', \'asasd\', NULL, \'500000000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (:id_user:, :title:, :date_column:, :time:, :organizer:, :type_sport:, :participant:, :location:, :upload:, :price:)', [...], false)
+ 5 APPPATH\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Login.php(109): App\Models\Eventm->saveuser([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->form()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+ERROR - 2023-06-08 07:01:56 --> mysqli_sql_exception: Column 'upload' cannot be null in D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Controllers\Login.php(109): App\Models\Eventm->saveuser(Array)
+#6 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(934): App\Controllers\Login->form()
+#7 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH...')
+#11 {main}
+CRITICAL - 2023-06-08 07:01:56 --> Column 'upload' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-09\', \'13:00\', \'lol\', \'Esport\', \'8\', \'asasd\', NULL, \'500000000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-09\', \'13:00\', \'lol\', \'Esport\', \'8\', \'asasd\', NULL, \'500000000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-09\', \'13:00\', \'lol\', \'Esport\', \'8\', \'asasd\', NULL, \'500000000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (:id_user:, :title:, :date_column:, :time:, :organizer:, :type_sport:, :participant:, :location:, :upload:, :price:)', [...], false)
+ 5 APPPATH\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Login.php(109): App\Models\Eventm->saveuser([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->form()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+ERROR - 2023-06-08 07:02:01 --> mysqli_sql_exception: Column 'upload' cannot be null in D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Controllers\Login.php(109): App\Models\Eventm->saveuser(Array)
+#6 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(934): App\Controllers\Login->form()
+#7 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH...')
+#11 {main}
+CRITICAL - 2023-06-08 07:02:01 --> Column 'upload' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-09\', \'13:00\', \'lol\', \'Esport\', \'8\', \'asasd\', NULL, \'500000000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-09\', \'13:00\', \'lol\', \'Esport\', \'8\', \'asasd\', NULL, \'500000000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-09\', \'13:00\', \'lol\', \'Esport\', \'8\', \'asasd\', NULL, \'500000000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (:id_user:, :title:, :date_column:, :time:, :organizer:, :type_sport:, :participant:, :location:, :upload:, :price:)', [...], false)
+ 5 APPPATH\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Login.php(109): App\Models\Eventm->saveuser([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->form()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+ERROR - 2023-06-08 07:02:08 --> mysqli_sql_exception: Column 'upload' cannot be null in D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Controllers\Login.php(109): App\Models\Eventm->saveuser(Array)
+#6 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(934): App\Controllers\Login->form()
+#7 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH...')
+#11 {main}
+CRITICAL - 2023-06-08 07:02:08 --> Column 'upload' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-09\', \'13:00\', \'lol\', \'Esport\', \'8\', \'asasd\', NULL, \'500000000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-09\', \'13:00\', \'lol\', \'Esport\', \'8\', \'asasd\', NULL, \'500000000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-09\', \'13:00\', \'lol\', \'Esport\', \'8\', \'asasd\', NULL, \'500000000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (:id_user:, :title:, :date_column:, :time:, :organizer:, :type_sport:, :participant:, :location:, :upload:, :price:)', [...], false)
+ 5 APPPATH\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Login.php(109): App\Models\Eventm->saveuser([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->form()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+ERROR - 2023-06-08 07:02:28 --> mysqli_sql_exception: Column 'upload' cannot be null in D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Controllers\Login.php(89): App\Models\Eventm->saveuser(Array)
+#6 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(934): App\Controllers\Login->form()
+#7 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH...')
+#11 {main}
+CRITICAL - 2023-06-08 07:02:28 --> Column 'upload' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-09\', \'13:00\', \'lol\', \'Esport\', \'8\', \'asasd\', NULL, \'500000000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-09\', \'13:00\', \'lol\', \'Esport\', \'8\', \'asasd\', NULL, \'500000000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-09\', \'13:00\', \'lol\', \'Esport\', \'8\', \'asasd\', NULL, \'500000000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (:id_user:, :title:, :date_column:, :time:, :organizer:, :type_sport:, :participant:, :location:, :upload:, :price:)', [...], false)
+ 5 APPPATH\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Login.php(89): App\Models\Eventm->saveuser([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->form()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-06-08 07:02:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 07:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 07:03:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-08 07:03:55 --> mysqli_sql_exception: Column 'upload' cannot be null in D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Controllers\Login.php(107): App\Models\Eventm->saveuser(Array)
+#6 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(934): App\Controllers\Login->form()
+#7 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH...')
+#11 {main}
+CRITICAL - 2023-06-08 07:03:55 --> Column 'upload' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'sss\', \'2023-06-15\', \'14:08\', \'lol\', \'Esport\', \'8\', \'slilir\', NULL, \'500000000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'sss\', \'2023-06-15\', \'14:08\', \'lol\', \'Esport\', \'8\', \'slilir\', NULL, \'500000000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'sss\', \'2023-06-15\', \'14:08\', \'lol\', \'Esport\', \'8\', \'slilir\', NULL, \'500000000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (:id_user:, :title:, :date_column:, :time:, :organizer:, :type_sport:, :participant:, :location:, :upload:, :price:)', [...], false)
+ 5 APPPATH\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Login.php(107): App\Models\Eventm->saveuser([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->form()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+ERROR - 2023-06-08 07:04:27 --> mysqli_sql_exception: Column 'upload' cannot be null in D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Controllers\Login.php(107): App\Models\Eventm->saveuser(Array)
+#6 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(934): App\Controllers\Login->form()
+#7 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH...')
+#11 {main}
+CRITICAL - 2023-06-08 07:04:27 --> Column 'upload' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'sss\', \'2023-06-15\', \'14:08\', \'lol\', \'Esport\', \'8\', \'slilir\', NULL, \'500000000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'sss\', \'2023-06-15\', \'14:08\', \'lol\', \'Esport\', \'8\', \'slilir\', NULL, \'500000000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'sss\', \'2023-06-15\', \'14:08\', \'lol\', \'Esport\', \'8\', \'slilir\', NULL, \'500000000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (:id_user:, :title:, :date_column:, :time:, :organizer:, :type_sport:, :participant:, :location:, :upload:, :price:)', [...], false)
+ 5 APPPATH\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Login.php(107): App\Models\Eventm->saveuser([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->form()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+ERROR - 2023-06-08 07:04:40 --> mysqli_sql_exception: Column 'upload' cannot be null in D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Controllers\Login.php(89): App\Models\Eventm->saveuser(Array)
+#6 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(934): App\Controllers\Login->form()
+#7 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH...')
+#11 {main}
+CRITICAL - 2023-06-08 07:04:40 --> Column 'upload' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'sss\', \'2023-06-15\', \'14:08\', \'lol\', \'Esport\', \'8\', \'slilir\', NULL, \'500000000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'sss\', \'2023-06-15\', \'14:08\', \'lol\', \'Esport\', \'8\', \'slilir\', NULL, \'500000000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'sss\', \'2023-06-15\', \'14:08\', \'lol\', \'Esport\', \'8\', \'slilir\', NULL, \'500000000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (:id_user:, :title:, :date_column:, :time:, :organizer:, :type_sport:, :participant:, :location:, :upload:, :price:)', [...], false)
+ 5 APPPATH\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Login.php(89): App\Models\Eventm->saveuser([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->form()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-06-08 07:04:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 07:04:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 07:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-08 07:05:34 --> mysqli_sql_exception: Column 'upload' cannot be null in D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Controllers\Login.php(89): App\Models\Eventm->saveuser(Array)
+#6 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(934): App\Controllers\Login->form()
+#7 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH...')
+#11 {main}
+CRITICAL - 2023-06-08 07:05:34 --> Column 'upload' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'sf\', \'2023-06-17\', \'14:07\', \'lol\', \'Sport\', \'8\', \'slilir\', NULL, \'500000000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'sf\', \'2023-06-17\', \'14:07\', \'lol\', \'Sport\', \'8\', \'slilir\', NULL, \'500000000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'sf\', \'2023-06-17\', \'14:07\', \'lol\', \'Sport\', \'8\', \'slilir\', NULL, \'500000000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (:id_user:, :title:, :date_column:, :time:, :organizer:, :type_sport:, :participant:, :location:, :upload:, :price:)', [...], false)
+ 5 APPPATH\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Login.php(89): App\Models\Eventm->saveuser([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->form()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+ERROR - 2023-06-08 07:06:00 --> mysqli_sql_exception: Column 'upload' cannot be null in D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Controllers\Login.php(89): App\Models\Eventm->saveuser(Array)
+#6 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(934): App\Controllers\Login->form()
+#7 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH...')
+#11 {main}
+CRITICAL - 2023-06-08 07:06:00 --> Column 'upload' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'sf\', \'2023-06-17\', \'14:07\', \'lol\', \'Sport\', \'8\', \'slilir\', NULL, \'500000000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'sf\', \'2023-06-17\', \'14:07\', \'lol\', \'Sport\', \'8\', \'slilir\', NULL, \'500000000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'sf\', \'2023-06-17\', \'14:07\', \'lol\', \'Sport\', \'8\', \'slilir\', NULL, \'500000000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (:id_user:, :title:, :date_column:, :time:, :organizer:, :type_sport:, :participant:, :location:, :upload:, :price:)', [...], false)
+ 5 APPPATH\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Login.php(89): App\Models\Eventm->saveuser([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->form()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-06-08 07:06:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 07:06:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 07:28:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 07:28:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-08 07:28:55 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Login.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->form()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+CRITICAL - 2023-06-08 07:29:28 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Login.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->form()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-06-08 07:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-08 07:30:03 --> mysqli_sql_exception: Column 'upload' cannot be null in D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Controllers\Login.php(105): App\Models\Eventm->saveuser(Array)
+#6 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(934): App\Controllers\Login->form()
+#7 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH...')
+#11 {main}
+CRITICAL - 2023-06-08 07:30:03 --> Column 'upload' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'sad\', \'2023-06-16\', \'14:30\', \'lol\', \'Esport\', \'8\', \'asd\', NULL, \'500000000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'sad\', \'2023-06-16\', \'14:30\', \'lol\', \'Esport\', \'8\', \'asd\', NULL, \'500000000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'sad\', \'2023-06-16\', \'14:30\', \'lol\', \'Esport\', \'8\', \'asd\', NULL, \'500000000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (:id_user:, :title:, :date_column:, :time:, :organizer:, :type_sport:, :participant:, :location:, :upload:, :price:)', [...], false)
+ 5 APPPATH\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Login.php(105): App\Models\Eventm->saveuser([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->form()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+ERROR - 2023-06-08 07:31:18 --> mysqli_sql_exception: Column 'upload' cannot be null in D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Controllers\Login.php(89): App\Models\Eventm->saveuser(Array)
+#6 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(934): App\Controllers\Login->form()
+#7 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH...')
+#11 {main}
+CRITICAL - 2023-06-08 07:31:18 --> Column 'upload' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'sad\', \'2023-06-16\', \'14:30\', \'lol\', \'Esport\', \'8\', \'asd\', NULL, \'500000000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'sad\', \'2023-06-16\', \'14:30\', \'lol\', \'Esport\', \'8\', \'asd\', NULL, \'500000000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'sad\', \'2023-06-16\', \'14:30\', \'lol\', \'Esport\', \'8\', \'asd\', NULL, \'500000000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (:id_user:, :title:, :date_column:, :time:, :organizer:, :type_sport:, :participant:, :location:, :upload:, :price:)', [...], false)
+ 5 APPPATH\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Login.php(89): App\Models\Eventm->saveuser([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->form()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-06-08 07:31:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-08 07:31:23 --> mysqli_sql_exception: Column 'upload' cannot be null in D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Controllers\Login.php(89): App\Models\Eventm->saveuser(Array)
+#6 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(934): App\Controllers\Login->form()
+#7 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH...')
+#11 {main}
+CRITICAL - 2023-06-08 07:31:23 --> Column 'upload' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'sad\', \'2023-06-16\', \'14:30\', \'lol\', \'Esport\', \'8\', \'asd\', NULL, \'500000000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'sad\', \'2023-06-16\', \'14:30\', \'lol\', \'Esport\', \'8\', \'asd\', NULL, \'500000000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'sad\', \'2023-06-16\', \'14:30\', \'lol\', \'Esport\', \'8\', \'asd\', NULL, \'500000000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (:id_user:, :title:, :date_column:, :time:, :organizer:, :type_sport:, :participant:, :location:, :upload:, :price:)', [...], false)
+ 5 APPPATH\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Login.php(89): App\Models\Eventm->saveuser([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->form()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-06-08 07:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-08 07:31:40 --> mysqli_sql_exception: Column 'upload' cannot be null in D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Controllers\Login.php(89): App\Models\Eventm->saveuser(Array)
+#6 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(934): App\Controllers\Login->form()
+#7 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH...')
+#11 {main}
+CRITICAL - 2023-06-08 07:31:40 --> Column 'upload' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'sad\', \'2023-06-16\', \'14:30\', \'lol\', \'Esport\', \'8\', \'asd\', NULL, \'500000000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'sad\', \'2023-06-16\', \'14:30\', \'lol\', \'Esport\', \'8\', \'asd\', NULL, \'500000000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'sad\', \'2023-06-16\', \'14:30\', \'lol\', \'Esport\', \'8\', \'asd\', NULL, \'500000000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (:id_user:, :title:, :date_column:, :time:, :organizer:, :type_sport:, :participant:, :location:, :upload:, :price:)', [...], false)
+ 5 APPPATH\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Login.php(89): App\Models\Eventm->saveuser([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->form()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+ERROR - 2023-06-08 07:32:06 --> mysqli_sql_exception: Column 'upload' cannot be null in D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Controllers\Login.php(89): App\Models\Eventm->saveuser(Array)
+#6 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(934): App\Controllers\Login->form()
+#7 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH...')
+#11 {main}
+CRITICAL - 2023-06-08 07:32:06 --> Column 'upload' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'sad\', \'2023-06-16\', \'14:30\', \'lol\', \'Esport\', \'8\', \'asd\', NULL, \'500000000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'sad\', \'2023-06-16\', \'14:30\', \'lol\', \'Esport\', \'8\', \'asd\', NULL, \'500000000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'sad\', \'2023-06-16\', \'14:30\', \'lol\', \'Esport\', \'8\', \'asd\', NULL, \'500000000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (:id_user:, :title:, :date_column:, :time:, :organizer:, :type_sport:, :participant:, :location:, :upload:, :price:)', [...], false)
+ 5 APPPATH\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Login.php(89): App\Models\Eventm->saveuser([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->form()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-06-08 07:32:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 07:32:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-08 07:32:56 --> mysqli_sql_exception: Column 'upload' cannot be null in D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Controllers\Login.php(105): App\Models\Eventm->saveuser(Array)
+#6 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(934): App\Controllers\Login->form()
+#7 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH...')
+#11 {main}
+CRITICAL - 2023-06-08 07:32:56 --> Column 'upload' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'safsa\', \'2023-06-24\', \'14:35\', \'lol\', \'Esport\', \'8\', \'slilir\', NULL, \'500000000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'safsa\', \'2023-06-24\', \'14:35\', \'lol\', \'Esport\', \'8\', \'slilir\', NULL, \'500000000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'safsa\', \'2023-06-24\', \'14:35\', \'lol\', \'Esport\', \'8\', \'slilir\', NULL, \'500000000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (:id_user:, :title:, :date_column:, :time:, :organizer:, :type_sport:, :participant:, :location:, :upload:, :price:)', [...], false)
+ 5 APPPATH\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Login.php(105): App\Models\Eventm->saveuser([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->form()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+ERROR - 2023-06-08 07:34:26 --> mysqli_sql_exception: Column 'upload' cannot be null in D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Controllers\Login.php(106): App\Models\Eventm->saveuser(Array)
+#6 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(934): App\Controllers\Login->form()
+#7 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH...')
+#11 {main}
+CRITICAL - 2023-06-08 07:34:26 --> Column 'upload' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'safsa\', \'2023-06-24\', \'14:35\', \'lol\', \'Esport\', \'8\', \'slilir\', NULL, \'500000000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'safsa\', \'2023-06-24\', \'14:35\', \'lol\', \'Esport\', \'8\', \'slilir\', NULL, \'500000000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'safsa\', \'2023-06-24\', \'14:35\', \'lol\', \'Esport\', \'8\', \'slilir\', NULL, \'500000000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (:id_user:, :title:, :date_column:, :time:, :organizer:, :type_sport:, :participant:, :location:, :upload:, :price:)', [...], false)
+ 5 APPPATH\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Login.php(106): App\Models\Eventm->saveuser([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->form()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-06-08 07:34:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 07:34:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-08 07:34:51 --> mysqli_sql_exception: Column 'upload' cannot be null in D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Controllers\Login.php(106): App\Models\Eventm->saveuser(Array)
+#6 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(934): App\Controllers\Login->form()
+#7 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH...')
+#11 {main}
+CRITICAL - 2023-06-08 07:34:51 --> Column 'upload' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-10\', \'14:37\', \'asd\', \'Others\', \'8\', \'asasd\', NULL, \'500000000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-10\', \'14:37\', \'asd\', \'Others\', \'8\', \'asasd\', NULL, \'500000000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-10\', \'14:37\', \'asd\', \'Others\', \'8\', \'asasd\', NULL, \'500000000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (:id_user:, :title:, :date_column:, :time:, :organizer:, :type_sport:, :participant:, :location:, :upload:, :price:)', [...], false)
+ 5 APPPATH\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Login.php(106): App\Models\Eventm->saveuser([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->form()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+CRITICAL - 2023-06-08 07:36:08 --> Illegal offset type
+in SYSTEMPATH\HTTP\RequestTrait.php on line 305.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(782): CodeIgniter\HTTP\Request->fetchGlobal('post', Object(CodeIgniter\HTTP\Files\UploadedFile), 516, 0)
+ 2 APPPATH\Controllers\Login.php(102): CodeIgniter\HTTP\IncomingRequest->getPost(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->form()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-06-08 07:36:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 07:37:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-08 07:38:11 --> mysqli_sql_exception: Column 'upload' cannot be null in D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Controllers\Login.php(106): App\Models\Eventm->saveuser(Array)
+#6 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(934): App\Controllers\Login->form()
+#7 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH...')
+#11 {main}
+CRITICAL - 2023-06-08 07:38:11 --> Column 'upload' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'zcx\', \'2023-06-10\', \'14:40\', \'zc\', \'Esport\', \'8\', \'zxc\', NULL, \'500000000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'zcx\', \'2023-06-10\', \'14:40\', \'zc\', \'Esport\', \'8\', \'zxc\', NULL, \'500000000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'zcx\', \'2023-06-10\', \'14:40\', \'zc\', \'Esport\', \'8\', \'zxc\', NULL, \'500000000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (:id_user:, :title:, :date_column:, :time:, :organizer:, :type_sport:, :participant:, :location:, :upload:, :price:)', [...], false)
+ 5 APPPATH\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Login.php(106): App\Models\Eventm->saveuser([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->form()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-06-08 07:42:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-08 07:42:35 --> mysqli_sql_exception: Column 'upload' cannot be null in D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Controllers\Login.php(105): App\Models\Eventm->saveuser(Array)
+#6 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(934): App\Controllers\Login->form()
+#7 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH...')
+#11 {main}
+CRITICAL - 2023-06-08 07:42:35 --> Column 'upload' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'zcx\', \'2023-06-10\', \'14:40\', \'zc\', \'Esport\', \'8\', \'zxc\', NULL, \'500000000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'zcx\', \'2023-06-10\', \'14:40\', \'zc\', \'Esport\', \'8\', \'zxc\', NULL, \'500000000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'zcx\', \'2023-06-10\', \'14:40\', \'zc\', \'Esport\', \'8\', \'zxc\', NULL, \'500000000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (:id_user:, :title:, :date_column:, :time:, :organizer:, :type_sport:, :participant:, :location:, :upload:, :price:)', [...], false)
+ 5 APPPATH\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Login.php(105): App\Models\Eventm->saveuser([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->form()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+ERROR - 2023-06-08 07:43:34 --> mysqli_sql_exception: Column 'upload' cannot be null in D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Controllers\Login.php(105): App\Models\Eventm->saveuser(Array)
+#6 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(934): App\Controllers\Login->form()
+#7 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH...')
+#11 {main}
+CRITICAL - 2023-06-08 07:43:34 --> Column 'upload' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'zcx\', \'2023-06-10\', \'14:40\', \'zc\', \'Esport\', \'8\', \'zxc\', NULL, \'500000000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'zcx\', \'2023-06-10\', \'14:40\', \'zc\', \'Esport\', \'8\', \'zxc\', NULL, \'500000000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'zcx\', \'2023-06-10\', \'14:40\', \'zc\', \'Esport\', \'8\', \'zxc\', NULL, \'500000000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (:id_user:, :title:, :date_column:, :time:, :organizer:, :type_sport:, :participant:, :location:, :upload:, :price:)', [...], false)
+ 5 APPPATH\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Login.php(105): App\Models\Eventm->saveuser([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->form()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-06-08 07:43:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 07:46:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-08 07:47:39 --> Could not move file "php54CA.tmp" to "D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\public\assets\image/". Reason: 
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 149.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php54CA.tmp', 'D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\assets\\image/', '')
+ 2 APPPATH\Controllers\Login.php(84): CodeIgniter\HTTP\Files\UploadedFile->move('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\assets\\image/', 'C:\\Users\\MSI\\AppData\\Local\\Temp\\php54CA.tmp')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->form()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-06-08 07:48:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-08 07:48:25 --> mysqli_sql_exception: Column 'upload' cannot be null in D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Controllers\Login.php(105): App\Models\Eventm->saveuser(Array)
+#6 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(934): App\Controllers\Login->form()
+#7 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH...')
+#11 {main}
+CRITICAL - 2023-06-08 07:48:25 --> Column 'upload' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'tub\', \'2023-06-08\', \'14:47\', \'stkiki\', \'Sport\', \'6\', \'ihir\', NULL, \'500000000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'tub\', \'2023-06-08\', \'14:47\', \'stkiki\', \'Sport\', \'6\', \'ihir\', NULL, \'500000000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'tub\', \'2023-06-08\', \'14:47\', \'stkiki\', \'Sport\', \'6\', \'ihir\', NULL, \'500000000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (:id_user:, :title:, :date_column:, :time:, :organizer:, :type_sport:, :participant:, :location:, :upload:, :price:)', [...], false)
+ 5 APPPATH\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Login.php(105): App\Models\Eventm->saveuser([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->form()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-06-08 07:51:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 07:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-08 07:54:55 --> mysqli_sql_exception: Column 'upload' cannot be null in D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Controllers\Formevent.php(41): App\Models\Eventm->saveuser(Array)
+#6 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(934): App\Controllers\Formevent->form()
+#7 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formevent))
+#8 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH...')
+#11 {main}
+CRITICAL - 2023-06-08 07:54:55 --> Column 'upload' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-10\', \'16:54\', \'lol\', \'Esport\', \'8\', \'slilir\', NULL, \'500000000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-10\', \'16:54\', \'lol\', \'Esport\', \'8\', \'slilir\', NULL, \'500000000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-10\', \'16:54\', \'lol\', \'Esport\', \'8\', \'slilir\', NULL, \'500000000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (:id_user:, :title:, :date_column:, :time:, :organizer:, :type_sport:, :participant:, :location:, :upload:, :price:)', [...], false)
+ 5 APPPATH\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Formevent.php(41): App\Models\Eventm->saveuser([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Formevent->form()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formevent))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+ERROR - 2023-06-08 08:01:12 --> mysqli_sql_exception: Column 'upload' cannot be null in D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Controllers\Formevent.php(41): App\Models\Eventm->saveuser(Array)
+#6 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(934): App\Controllers\Formevent->form()
+#7 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formevent))
+#8 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH...')
+#11 {main}
+CRITICAL - 2023-06-08 08:01:12 --> Column 'upload' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-10\', \'16:54\', \'lol\', \'Esport\', \'8\', \'slilir\', NULL, \'500000000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-10\', \'16:54\', \'lol\', \'Esport\', \'8\', \'slilir\', NULL, \'500000000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'asd\', \'2023-06-10\', \'16:54\', \'lol\', \'Esport\', \'8\', \'slilir\', NULL, \'500000000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (:id_user:, :title:, :date_column:, :time:, :organizer:, :type_sport:, :participant:, :location:, :upload:, :price:)', [...], false)
+ 5 APPPATH\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Formevent.php(41): App\Models\Eventm->saveuser([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Formevent->form()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formevent))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-06-08 08:01:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-08 08:01:15 --> Undefined variable $upload
+in APPPATH\Views\createCOMP.php on line 82.
+ 1 APPPATH\Views\createCOMP.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $upload', 'D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\createCOMP.php', 82)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\createCOMP.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('createCOMP', [], true)
+ 5 APPPATH\Controllers\Home.php(47): view('createCOMP', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->form()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-06-08 08:01:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 08:01:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-08 08:01:17 --> Undefined variable $upload
+in APPPATH\Views\createCOMP.php on line 82.
+ 1 APPPATH\Views\createCOMP.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $upload', 'D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\createCOMP.php', 82)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\createCOMP.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('createCOMP', [], true)
+ 5 APPPATH\Controllers\Home.php(47): view('createCOMP', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->form()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-06-08 08:01:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 08:01:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-08 08:01:21 --> Undefined variable $upload
+in APPPATH\Views\createCOMP.php on line 82.
+ 1 APPPATH\Views\createCOMP.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $upload', 'D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\createCOMP.php', 82)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\createCOMP.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('createCOMP', [], true)
+ 5 APPPATH\Controllers\Home.php(47): view('createCOMP', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->form()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-06-08 08:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 08:02:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-08 08:02:49 --> mysqli_sql_exception: Column 'upload' cannot be null in D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\app\Controllers\Formevent.php(41): App\Models\Eventm->saveuser(Array)
+#6 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(934): App\Controllers\Formevent->form()
+#7 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formevent))
+#8 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\system\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH...')
+#11 {main}
+CRITICAL - 2023-06-08 08:02:49 --> Column 'upload' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'tub\', \'2023-06-08\', \'15:02\', \'lol\', \'Esport\', \'8\', \'zxc\', NULL, \'500000000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'tub\', \'2023-06-08\', \'15:02\', \'lol\', \'Esport\', \'8\', \'zxc\', NULL, \'500000000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (\'1\', \'tub\', \'2023-06-08\', \'15:02\', \'lol\', \'Esport\', \'8\', \'zxc\', NULL, \'500000000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `event` (`id_user`, `title`, `date_column`, `time`, `organizer`, `type_sport`, `participant`, `location`, `upload`, `price`) VALUES (:id_user:, :title:, :date_column:, :time:, :organizer:, :type_sport:, :participant:, :location:, :upload:, :price:)', [...], false)
+ 5 APPPATH\Models\Eventm.php(13): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Formevent.php(41): App\Models\Eventm->saveuser([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Formevent->form()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formevent))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-06-08 08:03:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 08:03:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 08:04:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 08:06:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 08:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 08:07:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 08:08:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 08:11:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 08:11:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 08:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-08 08:13:17 --> Could not move file "phpCA33.tmp" to "D:\TUGAS\KULIAH\Semester 4\PW2\gohitfix\gohit\public\assets\image/". Reason: 
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 149.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpCA33.tmp', 'D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\assets\\image/', '')
+ 2 APPPATH\Controllers\Formevent.php(20): CodeIgniter\HTTP\Files\UploadedFile->move('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\assets\\image/', 'public\\assets\\image1686211997_863d64fe5c31e145d2cf.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Formevent->form()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formevent))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-06-08 08:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

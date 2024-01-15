@@ -1,0 +1,295 @@
+INFO - 2023-07-04 02:13:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 02:14:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 02:14:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 02:14:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 02:14:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 02:14:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 02:14:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 02:14:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 02:14:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 02:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 02:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 02:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 02:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 02:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 02:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 02:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 02:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 02:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 02:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 02:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 02:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 02:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 02:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 02:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 02:14:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 02:14:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 02:14:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 02:14:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 02:14:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 02:14:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 02:14:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 02:14:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 02:14:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+<<<<<<< HEAD
+INFO - 2023-07-04 12:14:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:14:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:14:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 12:14:42 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 23.
+ 1 APPPATH\Views\detaileventp.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(64): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'main.css')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-07-04 12:14:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 12:14:42 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 23.
+ 1 APPPATH\Views\detaileventp.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(64): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'style.css')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-07-04 12:14:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 12:14:43 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 23.
+ 1 APPPATH\Views\detaileventp.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(64): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('images', 'bg-01.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-07-04 12:14:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 12:14:44 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 23.
+ 1 APPPATH\Views\detaileventp.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(64): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('login')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-07-04 12:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 12:15:37 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 23.
+ 1 APPPATH\Views\detaileventp.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(64): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'main.css')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-07-04 12:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 12:15:37 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 23.
+ 1 APPPATH\Views\detaileventp.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(64): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'style.css')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-07-04 12:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 12:15:37 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 23.
+ 1 APPPATH\Views\detaileventp.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(64): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('images', 'bg-01.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-07-04 12:15:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:15:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 12:15:38 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 23.
+ 1 APPPATH\Views\detaileventp.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(64): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'main.css')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-07-04 12:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 12:15:39 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 23.
+ 1 APPPATH\Views\detaileventp.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(64): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'style.css')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-07-04 12:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 12:15:39 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 23.
+ 1 APPPATH\Views\detaileventp.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(64): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('images', 'bg-01.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-07-04 12:15:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:15:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 12:15:58 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 23.
+ 1 APPPATH\Views\detaileventp.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(64): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'main.css')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-07-04 12:15:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 12:15:58 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 23.
+ 1 APPPATH\Views\detaileventp.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(64): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'style.css')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-07-04 12:15:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 12:15:58 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 23.
+ 1 APPPATH\Views\detaileventp.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(64): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('images', 'bg-01.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-07-04 12:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 12:15:59 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 23.
+ 1 APPPATH\Views\detaileventp.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(64): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'main.css')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-07-04 12:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 12:15:59 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 23.
+ 1 APPPATH\Views\detaileventp.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(64): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'style.css')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-07-04 12:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 12:15:59 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 23.
+ 1 APPPATH\Views\detaileventp.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(64): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('images', 'bg-01.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-07-04 12:16:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+=======
+>>>>>>> 7d1698e308e05748cee269a570fa762edb09b2fc
+INFO - 2023-07-04 12:27:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:27:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:27:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 12:27:43 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 23.
+ 1 APPPATH\Views\detaileventp.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(64): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'main.css')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-07-04 12:27:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 12:27:43 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 23.
+ 1 APPPATH\Views\detaileventp.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(64): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('css', 'style.css')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-07-04 12:27:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 12:27:43 --> Undefined variable $tgl
+in APPPATH\Views\detaileventp.php on line 23.
+ 1 APPPATH\Views\detaileventp.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgl', 'D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\app\\Views\\detaileventp.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detaileventp', [], true)
+ 5 APPPATH\Controllers\DetailEvent.php(64): view('detaileventp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetailEvent->peserta('images', 'bg-01.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailEvent))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+INFO - 2023-07-04 12:27:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

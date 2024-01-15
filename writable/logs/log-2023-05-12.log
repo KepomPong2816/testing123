@@ -1,0 +1,60 @@
+CRITICAL - 2023-05-12 13:07:18 --> Invalid file: "latest.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('latest.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('latest', [], true)
+ 3 APPPATH\Controllers\Home.php(49): view('latest')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->late()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+CRITICAL - 2023-05-12 13:08:04 --> Invalid file: "latest.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('latest.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('latest', [], true)
+ 3 APPPATH\Controllers\Home.php(49): view('latest')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->late()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+CRITICAL - 2023-05-12 13:08:07 --> Invalid file: "latest.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('latest.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('latest', [], true)
+ 3 APPPATH\Controllers\Home.php(49): view('latest')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->late()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+CRITICAL - 2023-05-12 13:08:41 --> Invalid file: "latest.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('latest.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('latest', [], true)
+ 3 APPPATH\Controllers\Home.php(49): view('latest')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->late()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+CRITICAL - 2023-05-12 13:09:06 --> Invalid file: "latest.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('latest.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('latest', [], true)
+ 3 APPPATH\Controllers\Home.php(49): view('latest')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->late()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
+CRITICAL - 2023-05-12 13:11:02 --> Invalid file: "latest.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('latest.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('latest', [], true)
+ 3 APPPATH\Controllers\Home.php(49): view('latest')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->late()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TUGAS\\KULIAH\\Semester 4\\PW2\\gohitfix\\gohit\\public\\index.php')
